@@ -1,8 +1,8 @@
-<h2 class="text-center my-5">Employees</h2>
+<h2 class="text-center my-5">Mitarbeiter</h2>
 <div class="card">
 
     <div class="card-header">
-        <h4>Overview</h4>
+        <h4>Übersicht</h4>
     </div>
 
     <div  class="card-body">
@@ -10,12 +10,12 @@
             <thead>
                 <tr>
                     <th>Id</th>
-                    <th>FirstName</th>
-                    <th>LastName</th>
-                    <th>Phone</th>
-                    <th>Email</th>
+                    <th>Vorname</th>
+                    <th>Nachname</th>
+                    <th>Telefonnummer</th>
+                    <th>E-mail</th>
                     <th>Position</th>
-                    <th>Action</th>
+                    <th>Aktionen</th>
                 </tr>
             </thead>
             <tbody>
@@ -27,8 +27,8 @@
                     <td>{{employee.email}}</td>
                     <td>{{employee.position}}</td>
                     <td>
-                        <button class="btn btn-primary btn-sm m-2" (click)="editEmployee(employee.id)">Edit</button>
-                        <button class="btn btn-danger btn-sm" (click)="deleteEmployee(employee.id)">Delete</button>
+                        <button class="btn btn-primary btn-sm m-2" (click)="editEmployee(employee.id)">Bearbeiten</button>
+                        <button class="btn btn-danger btn-sm" (click)="deleteEmployee(employee.id)">Löschen</button>
                     </td>
                 </tr>
             </tbody>
